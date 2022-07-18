@@ -52,3 +52,50 @@ ul {
   padding: 11px;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.search {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+}
+
+.name {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+
+.notifications {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.buttons {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #e2e8f0;
+  border-radius: 10px;
+  height: 25px;
+}
+
+.name > p {
+  font-weight: bold;
+}
+
+.name > p > span {
+  font-size: 24px;
+}
