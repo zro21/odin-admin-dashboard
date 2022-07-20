@@ -25,6 +25,7 @@
   padding: 30px;
   font-size: 18px;
   font-weight: bold;
+  gap: 15px;
 }
 
 .sidebar-heading {
@@ -38,11 +39,44 @@
 
 .main-content {
   background-color: #CBD5E1;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-ul {
-  list-style: none;
+.projects {
+  grid-row: 1 / 3;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px repeat(3, 1fr);
+  gap: 20px;
 }
+
+.projects-heading {
+  grid-column: 1 / 3;
+}
+
+.card {
+  background-color: white;
+}
+
+.announcements {
+  grid-row: 1 / 2;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  gap: 20px;
+}
+
+.trending {
+  grid-row: 2 / 3;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 30px 1fr;
+  gap: 20px;
+}
+
 
 .sidebar-icons li {
   padding: 8px;
