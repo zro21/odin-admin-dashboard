@@ -59,6 +59,20 @@
 
 .card {
   background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  color: #706d6d;
+}
+
+.projects > .card {
+  border-left: 8px solid #f0b11f;
+}
+
+.card-heading {
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  color: black;
 }
 
 .announcements {
@@ -67,6 +81,20 @@
   display: grid;
   grid-template-rows: 30px 1fr;
   gap: 20px;
+}
+
+.announcements > .card {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.announcements > .card > .card-item > .card-heading {
+  font-size: 14px;
+}
+
+.announcements > .card > .card-item {
+  font-size: 14px;
 }
 
 .trending {
