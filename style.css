@@ -66,6 +66,15 @@
 
 .projects > .card {
   border-left: 8px solid #f0b11f;
+  display: grid;
+  grid-template-rows: 25px 1fr 25px;
+}
+
+.projects > .card > .card-symbols {
+  display: grid;
+  grid-template-columns: repeat(3, 30px);
+  gap: 20px;
+  justify-content: end;
 }
 
 .card-heading {
@@ -86,7 +95,7 @@
 .announcements > .card {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  gap: 5px;
+  gap: 10px;
 }
 
 .announcements > .card > .card-item > .card-heading {
@@ -97,12 +106,29 @@
   font-size: 14px;
 }
 
+.announcements > .card > :first-child,
+.announcements > .card > :nth-child(2) {
+  border-bottom: 1px solid #706d6d;
+}
+
 .trending {
   grid-row: 2 / 3;
   padding: 20px;
   display: grid;
   grid-template-rows: 30px 1fr;
   gap: 20px;
+}
+
+.trending > .card {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+  align-items: center;
+}
+
+.trending > .card > p > span {
+  color: black;
 }
 
 
